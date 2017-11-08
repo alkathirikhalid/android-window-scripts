@@ -2,6 +2,23 @@
 
 Android Windows Scripts.
 
+# Set Up
+
+This is a one time setup after installing Java and setting its path, then install Android Studio (Bundled with SDK and other tools) and set its path (Most developers will skip this as they interact with the SDK through the IDE and not command prompts/scripts) The scripts need to know the path to your Android SDK just like when setting Java, Maven, git e.t.c the system has to provided the path when commands are envoked.
+
+Step 1:
+The Android Home Directory need to be defiend in the Path, below are the values:
+- Variable: ANDROID_HOME
+- Value: C:\Users\alkathirikhalid\AppData\Local\Android\Sdk (The location of your Android SDK)
+
+Step 2:
+Android executables:
+- Path: %ANDROID_HOME%\platform-tools (Required)
+- Path: %ANDROID_HOME%\tools\bin (optional)
+- Path: %ANDROID_HOME%\tools (optional)
+
+The scripts will look for default installation of the Android SDK but always relies on the path ...\platform-tools for successful execution.
+
 # App
 
 - clearAppAche : Clear your App Cache incase of an update required data or malfunction due to corrupted cache.
